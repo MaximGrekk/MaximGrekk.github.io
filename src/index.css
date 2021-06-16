@@ -1,13 +1,78 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.App {
+    text-align: center;
+}
+
+.App .item-todo {
+    padding: 1em;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1em;
+    background: linear-gradient(
+        90deg,
+        rgba(170, 104, 18, 0.657) 0%,
+        rgba(255, 3, 3, 0.39) 100%
+    );
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.App .item-todo .item-text {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.App input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 6px 0 0 4px;
+    border: 2px solid rgba(170, 104, 18, 0.657);
+    outline: none;
+    background: transparent;
+}
+
+.App button {
+    padding: 16px 7px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+        90deg,
+        rgba(170, 104, 18, 0.657) 0%,
+        rgba(255, 3, 3, 0.39) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.App .item-todo .item-delete {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    font-size: 1.25em;
+    position: relative;
+    left: -4px;
+    bottom: 4px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgba(10, 10, 10, 0.2);
 }
